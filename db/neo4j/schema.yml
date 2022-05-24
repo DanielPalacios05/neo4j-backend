@@ -14,10 +14,13 @@
 :constraints:
 - CONSTRAINT ON ( `activegraph::migrations::schemamigration`:`ActiveGraph::Migrations::SchemaMigration`
   ) ASSERT (`activegraph::migrations::schemamigration`.migration_id) IS UNIQUE
-- CONSTRAINT ON ( user:User ) ASSERT (user.uuid) IS UNIQUE
+- CONSTRAINT ON ( citum:Citum ) ASSERT (citum.uuid) IS UNIQUE
 - CONSTRAINT ON ( usuario:Usuario ) ASSERT (usuario.uuid) IS UNIQUE
+- CONSTRAINT ON ( usuario:Usuario ) ASSERT (usuario.numeroDocumento) IS UNIQUE
+- 
 :indexes:
 - INDEX FOR (n:) ON ()
 - INDEX FOR (n:) ON ()
 :versions:
 - '20220523152636'
+- '20220523212638'
