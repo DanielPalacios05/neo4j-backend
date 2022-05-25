@@ -13,7 +13,7 @@ class Citum
   include ActiveGraph::Timestamps::Updated # will give model updated_at timestamp
 
   has_one :out, :Orden, type: :TIENE_ORDEN
-  has_one :oUT, :Recetum, type: :TIENE_RECETA
+  has_one :out, :Recetum, type: :TIENE_RECETA
 
 
 end
